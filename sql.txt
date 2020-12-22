@@ -1,0 +1,12 @@
+select 
+    d.department_name,e.first_name,e.last_name,e.salary 
+from 
+    ((select distinct department_id,first_name,last_name, salary 
+        from employees 
+        order by department_id,salary DESC) e 
+    inner join departments d 
+    on e.department_id = d.department_id)
+
+
+# difference from second top earner requires a function but i don't remember it by heart
+# and don't have time
