@@ -101,7 +101,7 @@ if __name__ == "__main__":
     #df = pd.read_csv('https://elementor-pub.s3.eu-central-1.amazonaws.com/Data-Enginner/Challenge1/request1.csv',header=None,names=['url'])
     for filename in os.listdir('/usr/sites')
     
-        df = pd.read_csv(filename,header=None,names=['url'])
+        df = pd.read_csv('/usr/sites'+filename,header=None,names=['url'])
         df['status'] = df.url.apply(o.query_url)
         print(filename)
         print(df)
