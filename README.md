@@ -5,7 +5,7 @@ I have to get back to work, so here's what you've got here.
 
 Task 1:
     had trouble with the API. this is a public repo so i am not going to register and hardcode an API key here.
-    so resorted to scraping with requests
+    so resorted to scraping with requests, which gives less the optimal results
 
     skipped implementing a db connection and calls (i hope that after reading my resume you trust i have the knowledge)
 
